@@ -26,10 +26,13 @@
                         <ul class="sublist">
                             <li><a href="#block">Block</a></li>
                             <li><a href="#inline">Inline</a></li>
-                            <li><a href="#inlineblock">Inline-Block</a></li>
                         </ul>
                     </li>
-                    <li><a href="#flcoit">Flex-Container // Flex-Item</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                    <ul class="sublist">
+                        <li><a href="#flexcontainer">Flexcontainer</a></li>
+                        <li><a href="#flexitem">Flexitem</a></li>
+                    </ul>
                 </ul>
             </div>
 
@@ -39,10 +42,12 @@
 
 <!-- Border-Box --> 
                 <h2 id="boxmodel">Box Model</h2>
+                <p>The CSS box model is essentially a box that wraps around every HTML element. 
+                    It consists of: content, padding, borders and margins.</p>
                 <div class="section">
                     <div class="subsection">
                         <h3 id="content">Content</h3>
-                        <div class="item">
+                        <div class="itemcontent">
                             <div class="boxmargin">
                                 <div class="boxpadding">
                                     <div class="boxcontent">
@@ -88,6 +93,8 @@
 
 <!-- Display --> 
                 <h2 id="display">Display</h2>
+                <p>The display CSS property sets whether an element is treated as a block or inline box and the layout used for its children,
+                     such as flow layout, grid or flex.</p>
                 <div class="section">
                     <div class="subsection">
                         <h3 id="block">Block</h3>
@@ -109,31 +116,28 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+<!-- Flexbox --> 
+                <h2 id="flexbox">Flexbox</h2>
+                <div class="section">
                     <div class="subsection">
-                        <h3 id="inlineblock">Inline-Block</h3>
+                        <h3 id="flexcontainer">Flexcontainer</h3>
                         <div class="item">
-                            <div class="inline">
-                                <div class="inlineitem"></div>
-                                <div class="inlineitem"></div>
-                                <div class="inlineitem"></div>
+                            <div class="flexcontainer1">
+                                <div class="flexitem1"></div>
+                                <div class="flexitem1"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-<!-- Flex-Container // Flex-Item --> 
-                <div class="section">
-                    <h2 id="flcoit">Flex-Container // Flex-Item</h2>
                     <div class="subsection">
+                        <h3 id="flexitem">Flexitem</h3>
                         <div class="item">
-                            <div class="flexcontainer">
-                                <div class="flexcontainer"></div>
-                                <div class="flexcontainer"></div>
+                            <div class="flexcontainer2">
+                                <div class="flexitem2"></div>
+                                <div class="flexitem2"></div>
                             </div>
-                            <div class="flexcontainer"></div>
-                            <div class="flexcontainer"></div>
                         </div>
-                        
                     </div>
                 </div>    
                 
