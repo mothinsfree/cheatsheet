@@ -1,0 +1,178 @@
+
+/* Layout */
+
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    padding: 20px 0;
+}
+
+.navigation {
+    flex: 1;
+    flex-direction: column;
+}
+
+.header {
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    flex-shrink: 1;
+    max-width: 1300px;
+    /* padding: 15px; */
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Subsection */
+
+.subsection {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+    height: 350px;
+    padding-right: 20px;
+    margin: 15px 0 0 0;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 300px;
+    min-width: 200px;
+
+}
+
+.item {
+
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    flex: 1;
+}
+
+/* Navigation Bar */
+
+.navigation {
+    display: flex;
+    align-self: flex-start;
+    max-width: 250px;
+    margin-left: 100px;
+    position: sticky;
+    top: 20px;
+}
+
+.navbar {
+    width: 250px;
+}
+
+
+/* List */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sublist {
+    margin-left: 15px;
+}
+
+/* Header */
+
+h2 {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+#boxmodel {
+    margin-top: 0;
+}
+
+/* Link Styles */
+
+a {
+    color: white;
+}
+
+a:link, a:visited, a:active {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+/*//// Lections ////*/
+
+/* Padding // Margin // Border */
+
+
+/* Block // Inline // Inline-Block */
+
+.blin .item {
+    justify-content: left;
+}
+
+.block {
+    display: block;
+    height: 200px;
+}
+
+.inline {
+    display: flex;
+    height: 200px;
+}
+
+.blockitem {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(53, 53, 53);
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.inlineitem {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(53, 53, 53);
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+/* Flex-Container // Flex-Item */
+
+
+.flexcontainer {
+    display: flex;
+    flex: 1;
+    height: 50px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+}
