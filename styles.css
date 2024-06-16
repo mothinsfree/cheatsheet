@@ -34,6 +34,8 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+/*    border-color: rgb(95, 77, 175);
+    border-style: solid; */
 }
 
 /* Subsection */
@@ -47,16 +49,16 @@ body {
     border-width: 1px;
     max-width: 300px;
     min-width: 200px;
-/*    border-color: white;
+/*    border-color: red;
     border-style: solid; */
 
 }
 
 .item {
-/*    border-color: white;
-    border-style: solid;
+/*    border-color: red;
+    border-style: solid; */
     border-radius: 5px;
-    border-width: 1px; */
+    border-width: 1px; 
     margin-top: 10px;
     flex: 1;
     display: flex;
@@ -124,7 +126,7 @@ a:hover {
 
 /*//// Lections ////*/
 
-/* Content // Padding // Margin // Border */
+/* Border-Box */
 .itempadding, .itemmargin, .itemborder {
 /*    border-color: white;
     border-style: solid;
@@ -181,39 +183,41 @@ a:hover {
     border-color: rgb(255, 255, 255);
 }
 
-/* Block // Inline // Inline-Block */
-
-.blin .item {
-    justify-content: left;
-}
+/* Display */
 
 .block {
-    display: block;
+    flex: 1;
+    display: inline-block;
     height: 200px;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+    justify-content: space-between;
 }
 
 .inline {
+    flex: 1;
     display: flex;
+    flex-wrap: wrap;
     height: 200px;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
 }
 
 .blockitem {
-    width: 50px;
-    height: 20px;
-    background-color: rgb(53, 53, 53);
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
     margin: 5px;
-    text-align: center;
-    padding: 5px;
     border-radius: 2px;
 }
 
 .inlineitem {
-    width: 50px;
-    height: 20px;
-    background-color: rgb(53, 53, 53);
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
     margin: 5px;
-    text-align: center;
-    padding: 5px;
     border-radius: 2px;
 }
 
