@@ -12,21 +12,30 @@ body {
 .layout {
     display: flex;
     padding: 20px 0;
+    justify-content: flex-start;
+}
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    align-self: flex-start;
+    flex: 0 1 300px;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+    margin: 0 30px 0 20px;
 }
 
-.navigation {
-    flex: 1;
-    flex-direction: column;
+.navbar {
+
 }
+
 
 .header {
     margin: 0;
 }
 
 .content {
-    flex: 1;
-    flex-shrink: 1;
-    max-width: 1300px;
+    flex: 0 1 1300px;
     /* padding: 15px; */
 }
 
@@ -54,6 +63,17 @@ body {
 
 }
 
+.subsectionwide {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+    padding-right: 20px;
+    margin: 15px 0 0 0;
+    border-width: 1px;
+    max-width: 1300px;
+    min-width: 200px;
+}
+
 .item {
 /*    border-color: red;
     border-style: solid; */
@@ -64,20 +84,6 @@ body {
     display: flex;
 }
 
-/* Navigation Bar */
-
-.navigation {
-    display: flex;
-    align-self: flex-start;
-    max-width: 250px;
-    margin-left: 100px;
-    position: sticky;
-    top: 20px;
-}
-
-.navbar {
-    width: 250px;
-}
 
 
 /* List */
@@ -197,18 +203,20 @@ a:hover {
 
 .block {
     flex: 1;
-    display: inline-block;
+    display: block;
+    justify-content: space-between;
     height: 200px;
     border-color: rgb(129, 129, 129);
     border-width: 1px;
     border-style: solid;
-    justify-content: space-between;
 }
 
 .inline {
     flex: 1;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
     height: 200px;
     border-color: rgb(129, 129, 129);
     border-width: 1px;
@@ -219,17 +227,17 @@ a:hover {
     display: block;
     width: 120px;
     height: 50px;
-    margin: 5px;
+    margin: 5px 0 0 5px;
     border-color: rgb(255, 255, 255);
     border-width: 2px;
     border-style: solid;
 }
 
 .inlineitem {
-    display: block;
+    display: inline-flex;
     width: 120px;
     height: 50px;
-    margin: 5px;
+    margin: 5px 0 0 5px;
     border-color: rgb(255, 255, 255);
     border-width: 2px;
     border-style: solid;
@@ -263,4 +271,142 @@ a:hover {
 
 .flexcontainer2, .flexitem1 {
     border-color: rgb(129, 129, 129);
+}
+
+
+/* Flex-_ */
+
+.flexgsb {
+    flex: 1;
+    max-width: 1300px;
+    min-width: 200px;
+}
+
+.flexgrow1, .flexgrow2, .flexshrink1, .flexshrink2 {
+    height: 50px;
+    width: 100px;
+    border-color: rgb(129, 129, 129);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.flexgrow1 {
+    flex-grow: 1;
+}
+
+.flexgrow2 {
+    flex-grow: 2;
+}
+
+.flexshrink1 {
+    flex: 0 1 0;
+}
+
+.flexshrink2 {
+    flex-shrink: 0 2 0;
+}
+
+.flexgsb p {
+    margin: 0;
+    display: inline;
+}
+
+.onehpc, .twohpc {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Alignment */
+
+.subsubsection {
+    display: flex;
+    flex: 0 1 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.justify-c ul, .align-i ul, .align-s ul {
+    height: 150px;
+    width: 190px;
+    border-color: rgb(129, 129, 129);
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.aligned1, .aligned2 {
+    height: 30px;
+    width: 25px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;    
+}
+.aligned2 {
+    height: 50px;
+}
+
+.align-s .aligned1 {
+    border-color: rgb(129, 129, 129);
+    border-width: 1px;
+}
+.align-s ul {
+    align-items: flex-start;
+}
+
+.justify-c p, .align-i p, .align-s p {
+    margin: 5px 0 15px 0;
+}
+
+/* justify content */
+.justify-c .flex-start {
+    justify-content: flex-start;
+}
+
+.justify-c .flex-end {
+    justify-content: flex-end;
+}
+
+.justify-c .center {
+    justify-content: center;
+}
+
+.justify-c .space-between {
+    justify-content: space-between;
+}
+
+.justify-c .space-around {
+    justify-content: space-around;
+}
+
+.justify-c .space-evenly {
+    justify-content: space-evenly;
+}
+/* align.items */
+.align-i .flex-start {
+    align-items: flex-start;
+}
+
+.align-i .flex-end {
+    align-items: flex-end;
+}
+
+.align-i .center {
+    align-items: center;
+}
+/* align-self */
+.align-s .flex-start .aligned2 {
+    align-self: flex-start;
+}
+
+.align-s .flex-end .aligned2 {
+    align-self: flex-end;
+} 
+
+.align-s .center .aligned2 {
+    align-self: center;
 }

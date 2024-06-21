@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
-        <title>Cheatsheet</title>
+        <title>Infosheet</title>
         <link rel="icon" href="img/moth.png">
     </head>
 
@@ -12,14 +12,15 @@
         <div class="layout">
 <!-- Navigation --> 
             <div class="navigation">
-                <h1 class="header">Cheatsheet</h1> <br>
+
                 <ul class="navbar">
+                <h1 class="header">Infosheet</h1> <br>
                     <li><a href="#boxmodel">Box Model</a>
                         <ul class="sublist">
                             <li><a href="#content">Content</a></li>
                             <li><a href="#padding">Padding</a></li>
-                            <li><a href="#margin">Margin</a></li>
                             <li><a href="#border">Border</a></li>
+                            <li><a href="#margin">Margin</a></li>
                         </ul>
                     </li>
                     <li><a href="#display">Display</a>
@@ -38,6 +39,20 @@
                         <li><a href="#flexgrow">flex-grow</a></li>
                         <li><a href="#flexshrink">flex-shrink</a></li>
                         <li><a href="#flexbasis">flex-basis</a></li>
+                    </ul>
+                    <li><a href="#flex-direction">flex-direction</a></li>
+                    <ul class="sublist">
+                        <li><a href="#row">row</a></li>
+                        <li><a href="#column">column</a></li>
+                    </ul>
+                    <li><a href="#alignment">Alignment</a></li>
+                    <ul class="sublist">
+                        <li><a href="#justify-c">justify-content</a></li>
+                        <li><a href="#align-i">align-items</a></li>
+                        <li><a href="#align-s">align-self</a></li>
+                        <li><a href="#align-c">align-content</a></li>
+                        <li><a href="#gap">gap</a></li>
+                        <li><a href="#flex-wrap">flex-wrap</a></li>
                     </ul>
                 </ul>
             </div>
@@ -74,8 +89,8 @@
                         </div>
                     </div>
                     <div class="subsection">
-                        <h3 id="margin">Margin</h3>
-                        <div class="itemmargin">
+                        <h3 id="border">Border</h3>
+                        <div class="itemborder">
                             <div class="boxmargin">
                                 <div class="boxpadding">
                                     <div class="boxcontent">
@@ -85,8 +100,8 @@
                         </div>
                     </div>
                     <div class="subsection">
-                        <h3 id="border">Border</h3>
-                        <div class="itemborder">
+                        <h3 id="margin">Margin</h3>
+                        <div class="itemmargin">
                             <div class="boxmargin">
                                 <div class="boxpadding">
                                     <div class="boxcontent">
@@ -165,29 +180,195 @@
                 
 <!-- flex-_ --> 
                 <h2 id="flex">flex-_</h2>
+
                 <div class="section">
-                    <div class="subsection">
+                    <div class="subsectionwide">
                         <h3 id="flexgrow">flex-grow</h3>
                         <div class="item">
-                            <div class="">
+                            <div class="flexgsb">
+                                <div class="onehpc">
+<!--                                    <p>100%</p> -->
+                                    <div class="flexgrow1">flex-grow: 1</div>
+                                    <div class="flexgrow2">flex-grow: 2</div>
+                                </div>
+<!--                            <div class="twohpc"> 
+                                    <p>200%</p>
+                                    <div class="flexgrow21">flex-grow: 1</div>
+                                    <div class="flexgrow22">flex-grow: 2</div>
+                                </div>    -->
                             </div>
                         </div>
                     </div>
-                    <div class="subsection">
+                    <div class="subsectionwide">
                         <h3 id="flexshrink">flex-shrink</h3>
                         <div class="item">
-                            <div class="">
+                            <div class="flexgsb">
+                                <div class="onehpc">
+<!--                                    <p>100%</p> -->
+                                    <div class="flexshrink1">flex-shrink: 1</div>
+                                    <div class="flexshrink2">flex-shrink: 2</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="subsection">
+                    <div class="subsectionwide">
                         <h3 id="flexbasis">flex-basis</h3>
                         <div class="item">
                             <div class="">
                             </div>
                         </div>
                     </div>
-                </div>            
+                </div>      
+                
+                
+<!-- flex-direction --> 
+
+<!-- alignment --> 
+                <h2 id="alignment">Alignment</h2>
+
+                <div class="section">
+                    <div class="subsectionwide">
+                        <h3 id="justify-c">justify-content</h3>
+                        <div class="subsubsection">
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="flex-start">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-start</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="flex-end">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-end</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="center">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>center</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="space-between">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>space-between</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="space-around">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>space-around</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="justify-c">
+                                    <ul class="space-evenly">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>space-evenly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="section">
+                    <div class="subsectionwide">
+                        <h3 id="align-i">align-items</h3>
+                        <div class="subsubsection">
+                            <div class="item">
+                                <div class="align-i">
+                                    <ul class="flex-start">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-start</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="align-i">
+                                    <ul class="flex-end">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-end</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="align-i">
+                                    <ul class="center">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>center</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="section">
+                    <div class="subsectionwide">
+                        <h3 id="align-s">align-self</h3>
+                        <div class="subsubsection">
+                            <div class="item">
+                                <div class="align-s">
+                                    <ul class="flex-start">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-start</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="align-s">
+                                    <ul class="flex-end">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>flex-end</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="align-s">
+                                    <ul class="center">
+                                        <li class="aligned1"></li>
+                                        <li class="aligned2"></li>
+                                        <li class="aligned1"></li>
+                                    </ul>
+                                    <p>center</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
 
 
 
@@ -197,11 +378,8 @@
 
 
 
+<!-- End -->
             </div>
-
-
-
-
 
         </div>
     </body>
